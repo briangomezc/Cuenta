@@ -28,7 +28,7 @@
                         <p:calendar id="fecha" pattern="MM/dd/yyyy" value="#{transaccionesController.selected.fecha}" title="#{myBundle.EditTransaccionesTitle_fecha}"  showOn="button"/>
 
                         <p:outputLabel value="#{myBundle.EditTransaccionesLabel_monto}" for="monto" />
-                        <p:inputText id="monto" value="#{transaccionesController.selected.monto}" title="#{myBundle.EditTransaccionesTitle_monto}"/>
+                        <p:inputText id="monto" value="#{transaccionesController.selected.monto}" title="#{myBundle.EditTransaccionesTitle_monto}"><f:validator validatorId="Validators.NumericValidator"/></p:inputText>
 
                         <p:outputLabel value="#{myBundle.EditTransaccionesLabel_idCliente}" for="idCliente" />
                         <p:selectOneMenu id="idCliente" value="#{transaccionesController.selected.idCliente}"  converter="clientesConverter">

@@ -33,12 +33,12 @@
 
                         <pm:field>
                             <p:outputLabel value="#{myBundle.EditBalancesLabel_promedioSaldo}" for="promedioSaldo" />
-                            <p:inputText id="promedioSaldo" value="#{balancesController.selected.promedioSaldo}" title="#{myBundle.EditBalancesTitle_promedioSaldo}"/>
+                            <p:inputText id="promedioSaldo" value="#{balancesController.selected.promedioSaldo}" title="#{myBundle.EditBalancesTitle_promedioSaldo}"><f:validator validatorId="Validators.NumericValidator"/></p:inputText>
                         </pm:field>
 
                         <pm:field>
                             <p:outputLabel value="#{myBundle.EditBalancesLabel_monto}" for="monto" />
-                            <p:inputText id="monto" value="#{balancesController.selected.monto}" title="#{myBundle.EditBalancesTitle_monto}"/>
+                            <p:inputText id="monto" value="#{balancesController.selected.monto}" title="#{myBundle.EditBalancesTitle_monto}"><f:validator validatorId="Validators.NumericValidator"/></p:inputText>
                         </pm:field>
 
                         <pm:field>

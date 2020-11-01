@@ -33,12 +33,12 @@
 
                         <pm:field>
                             <p:outputLabel value="#{myBundle.CreateClientesLabel_cedula}" for="cedula" />
-                            <p:inputText id="cedula" value="#{clientesController.selected.cedula}" title="#{myBundle.CreateClientesTitle_cedula}" size="11" maxlength="11"/>
+                            <p:inputText id="cedula" value="#{clientesController.selected.cedula}" title="#{myBundle.CreateClientesTitle_cedula}" size="11" maxlength="11"><f:validator validatorId="Validators.CedulaValidator"/></p:inputText>
                         </pm:field>
 
                         <pm:field>
                             <p:outputLabel value="#{myBundle.CreateClientesLabel_limiteCredito}" for="limiteCredito" />
-                            <p:inputText id="limiteCredito" value="#{clientesController.selected.limiteCredito}" title="#{myBundle.CreateClientesTitle_limiteCredito}"/>
+                            <p:inputText id="limiteCredito" value="#{clientesController.selected.limiteCredito}" title="#{myBundle.CreateClientesTitle_limiteCredito}"><f:validator validatorId="Validators.NumericValidator"/></p:inputText>
                         </pm:field>
 
                         <pm:field>

@@ -43,7 +43,7 @@
 
                         <pm:field>
                             <p:outputLabel value="#{myBundle.CreateTransaccionesLabel_monto}" for="monto" />
-                            <p:inputText id="monto" value="#{transaccionesController.selected.monto}" title="#{myBundle.CreateTransaccionesTitle_monto}"/>
+                            <p:inputText id="monto" value="#{transaccionesController.selected.monto}" title="#{myBundle.CreateTransaccionesTitle_monto}"><f:validator validatorId="Validators.NumericValidator"/></p:inputText>
                         </pm:field>
 
                         <pm:field>
