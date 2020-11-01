@@ -22,10 +22,10 @@
                         <p:calendar id="fechaCorte" pattern="MM/dd/yyyy" value="#{balancesController.selected.fechaCorte}" title="#{myBundle.CreateBalancesTitle_fechaCorte}" required="true" requiredMessage="#{myBundle.CreateBalancesRequiredMessage_fechaCorte}" showOn="button"/>
 
                         <p:outputLabel value="#{myBundle.CreateBalancesLabel_promedioSaldo}" for="promedioSaldo" />
-                        <p:inputText id="promedioSaldo" value="#{balancesController.selected.promedioSaldo}" title="#{myBundle.CreateBalancesTitle_promedioSaldo}"/>
+                        <p:inputText id="promedioSaldo" value="#{balancesController.selected.promedioSaldo}" title="#{myBundle.CreateBalancesTitle_promedioSaldo}"><f:validator validatorId="Validators.NumericValidator"/></p:inputText>
 
                         <p:outputLabel value="#{myBundle.CreateBalancesLabel_monto}" for="monto" />
-                        <p:inputText id="monto" value="#{balancesController.selected.monto}" title="#{myBundle.CreateBalancesTitle_monto}"/>
+                        <p:inputText id="monto" value="#{balancesController.selected.monto}" title="#{myBundle.CreateBalancesTitle_monto}"><f:validator validatorId="Validators.NumericValidator"/></p:inputText>
 
                         <p:outputLabel value="#{myBundle.CreateBalancesLabel_idCliente}" for="idCliente" />
                         <p:selectOneMenu id="idCliente" value="#{balancesController.selected.idCliente}"  converter="clientesConverter">
